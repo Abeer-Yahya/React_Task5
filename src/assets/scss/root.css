@@ -196,6 +196,7 @@ nav .primaryButton {
 
 .contact {
   padding: 0rem 4rem;
+  padding-bottom: 3.2rem;
   background-color: #ff8f5f;
   text-align: center;
 }
@@ -256,6 +257,42 @@ nav .primaryButton {
   margin-top: 0.5rem;
   font-size: 0.7rem;
   color: gray;
+}
+
+footer {
+  background-color: #f2f1ee;
+  padding: 2.2rem 4rem;
+}
+footer .links {
+  display: flex;
+  justify-content: space-between;
+}
+footer .links h6 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+footer .links ul {
+  list-style: none;
+}
+footer .links ul li {
+  margin-bottom: 0.5rem;
+}
+footer .links a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ff8f5f;
+  margin-top: 2rem;
+}
+footer .subFooter {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer .subFooter p {
+  color: gray;
+}
+footer .subFooter .icon {
+  margin-right: 1rem;
 }
 
 * {

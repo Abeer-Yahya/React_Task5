@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Numbers from "./components/numbers";
 import Career from "./components/career";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <Numbers />
       <Career />
       <Contact />
+      <Footer />
     </div>
   );
 }
