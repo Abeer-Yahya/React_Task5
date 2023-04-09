@@ -38,6 +38,15 @@ nav .primaryButton {
   margin-right: 1.4rem;
   font-weight: 600;
 }
+nav .logoutButton {
+  background-color: #ff8f5f;
+  border: 2px solid #131313;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
 
 .hero {
   padding: 4.6rem 4rem;
