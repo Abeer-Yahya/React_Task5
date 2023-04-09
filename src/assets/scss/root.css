@@ -312,4 +312,52 @@ footer .subFooter .icon {
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.loginForm {
+  margin: 2.4rem auto;
+  background-color: white;
+  width: 28rem;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+}
+.loginForm h5 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.loginForm input {
+  width: 20rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding-left: 0.4rem;
+  border: 2px solid #f2f1ee;
+  border-radius: 10px;
+}
+.loginForm button {
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff8f5f;
+  color: #f2f1ee;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.loginForm p {
+  width: 20rem;
+  margin: 0 auto;
+  font-size: 0.7rem;
+  color: gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #131313;
 }/*# sourceMappingURL=root.css.map */

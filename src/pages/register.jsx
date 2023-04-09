@@ -22,7 +22,6 @@ const Register = () => {
       patterns.password.test(password) &&
       password == ConfirmPassword
     ) {
-      console.log("test");
       if (checkEmail(email)) {
         let newUser = { email: email, password: password };
         setAllusersArray([...allUsersArray, newUser]);
@@ -49,41 +48,30 @@ const Register = () => {
   }
 
   return (
-    <div className="mt-5 login-form">
-      <h1>Register</h1>
+    <div className=" loginForm">
+      <h5>Register</h5>
       <form>
-        <div className="mb-3" controlId="formBasicEmail">
-          <label>Email address</label>
-          <input id={"email"} type="email" placeholder="Enter email" />
+        <div>
+          <input id={"email"} type="email" placeholder="Email Address" />
         </div>
 
-        <div className="mb-3" controlId="formBasicPassword">
-          <label>Password</label>
+        <div>
           <input id={"password"} type="password" placeholder="Password" />
         </div>
 
-        <div className="mb-3" controlId="formBasicPassword">
-          <label>Password</label>
+        <div>
           <input
             id={"ConfirmPassword"}
             type="password"
             placeholder="Confirm Password"
           />
         </div>
-        <Link
-          to="/login"
-          className="text-gray-800 hover:shadow-lg"
-          style={{ textDecoration: "none", color: "#00253e " }}
-        >
-          <small>Already have an account</small>
+        <Link to="/login">
+          <p>Already have an account?</p>
           <br></br>
         </Link>
         <br></br>
-        <button
-          style={{ backgroundColor: "#00253e " }}
-          type="button"
-          onClick={handelSubmit}
-        >
+        <button type="button" onClick={handelSubmit}>
           Submit
         </button>
       </form>

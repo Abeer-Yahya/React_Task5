@@ -28,35 +28,20 @@ export default function Login() {
   };
 
   return (
-    <div className="mt-5  login-form">
-      <h1>Login</h1>
+    <div className="loginForm">
+      <h5>Login</h5>
       <form>
-        <div className="mb-3" controlId="formBasicEmail">
-          <label>Email address</label>
-          <input id={"email"} type="email" placeholder="Enter email" />
-        </div>
+        <input id={"email"} type="email" placeholder="Email Address" />
 
-        <div className="mb-3" controlId="formBasicPassword">
-          <label>Password</label>
-          <input id={"password"} type={"password"} placeholder="Password" />
-        </div>
-        <Link
-          to="/register"
-          className="text-gray-800 hover:shadow-lg"
-          style={{ textDecoration: "none", color: "#00253e " }}
-        >
-          <small>Create new account</small>
+        <input id={"password"} type={"password"} placeholder="Password" />
+        <Link to="/register">
+          <p>Create new account</p>
           <br></br>
         </Link>
         <br></br>
-        <button
-          style={{ backgroundColor: "#00253e ", marginBottom: "1rem" }}
-          type="button"
-          onClick={handelSubmit}
-        >
+        <button type="button" onClick={handelSubmit}>
           Submit
         </button>
-        <p style={{ color: "#00253e" }}>OR</p>
       </form>
     </div>
   );
