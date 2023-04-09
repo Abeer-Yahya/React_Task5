@@ -28,6 +28,7 @@ const Register = () => {
         console.log(allUsersArray);
         setCookie("currentUser", newUser, { path: "/" });
         setAllusers("AllUsers", [...allUsersArray, newUser], { path: "/" });
+        navigate("/");
       } else {
         alert("This Email is already used");
       }
