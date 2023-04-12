@@ -3,29 +3,31 @@ let jobs = [];
 
 function Job(props) {
   const job = props.job;
+  let apiDate = job.activeFrom.split("T")[0];
+  let jobDate;
+  function reverseString(apiDate) {
+    return (jobDate = apiDate.split("-").reverse().join("-"));
+  }
+  reverseString(apiDate);
   return (
     <div className="jobCard">
       {!job.logoImg ? (
         <img
           src="https://s3-us-west-2.amazonaws.com/procure-now-public/assets/unknown-business-logo.png"
-          width="15%"
+          width="20%"
         />
       ) : (
-        <img src={job.logoImg} width="15%" />
+        <img src={job.logoImg} width="20%" />
       )}
       <p>
-        <b> {job.company}</b> <br />
-        {job.jobType}
-        <br />
-        {job.name} - {job.expLevel}
+        <strong>{job.company},</strong> <br />
+        <small>{job.address}</small>
       </p>
-      <p>
-        {job.activeFrom.split("T")[0]} <br />
-      </p>
-      <small>
-        <i></i> {job.address}
-      </small>
-      <br />
+
+      <p className="date">{jobDate}</p>
+      <p className="type"> {job.jobType}</p>
+
+      <p>{job.name}</p>
       <a href={job.redirectJobUrl} target="blank">
         More info
       </a>

@@ -363,26 +363,62 @@ body {
   background-color: #131313;
 }
 
-.container {
+.jobs .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #131313;
   gap: 20px;
   padding: 4rem;
+  color: #131313;
 }
-.container .jobCard {
+.jobs .container .jobCard {
+  position: relative;
   text-align: center;
   background-color: white;
   border-radius: 10px;
   padding: 2rem 1rem;
 }
-.container .jobCard a {
+.jobs .container .jobCard p {
+  margin-bottom: 0.4rem;
+}
+.jobs .container .jobCard a {
   text-decoration: none;
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 1rem;
   background-color: #ff8f5f;
   color: #131313;
+  border-radius: 6px;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.jobs .container .jobCard .type {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ff8f5f;
+  padding: 0.2rem 0.4rem;
+  background-color: #f2f1ee;
+  border-radius: 6px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.jobs .container .jobCard .date {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ff8f5f;
+  padding: 0.2rem 0.4rem;
+  background-color: #f2f1ee;
+  border-radius: 6px;
+  position: absolute;
+  top: 1rem;
+  left: 16.5rem;
+}
+.jobs .pagination {
+  margin-bottom: 1.4rem;
+  display: flex;
+  justify-content: center;
+  background-color: #ff8f5f;
 }
 
 * {

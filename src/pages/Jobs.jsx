@@ -1,9 +1,19 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Job from "../components/Job";
+import { Pagination } from "@mui/material";
 
 export default function Jobs() {
   const [jobs, setJobs] = useState([]);
+  // pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const [jobPerPage, setJobPerPage] = useState(10);
+  const handleChange = (event, value) => {
+    setCurrentPage(value);
+  };
+  const lastJobIndex = currentPage * jobPerPage;
+  const firstJobIndex = lastJobIndex - jobPerPage;
+  const currentJobs = jobs.slice(firstJobIndex, lastJobIndex);
 
   useEffect(() => {
     const options = {
@@ -26,15 +36,24 @@ export default function Jobs() {
 
   return (
     <>
-      <div>
-        <div>
-          <div className="container">
-            {jobs.map((job, i) => {
+      <section className="jobs">
+        <div className="container">
+          {currentJobs ? (
+            currentJobs.map((job, i) => {
               return <Job key={i} job={job} />;
-            })}
-          </div>
+            })
+          ) : (
+            <h1 className="text-center"> Not Found</h1>
+          )}
         </div>
-      </div>
+        <div className=" pagination">
+          <Pagination
+            count={Math.ceil(jobs.length / jobPerPage)}
+            page={currentPage}
+            onChange={handleChange}
+          />
+        </div>
+      </section>
     </>
   );
 }
