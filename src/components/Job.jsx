@@ -8,10 +8,12 @@ function Job(props) {
       <img src={job.logoImg} width="15%" />
       <p>
         <b> {job.company}</b> <br />
+        {job.jobType}
+        <br />
         {job.name} - {job.expLevel}
       </p>
       <p>
-        {job.activeFrom.split("T")[0]} <br /> {job.jobType}
+        {job.activeFrom.split("T")[0]} <br />
       </p>
       <small>
         <i></i> {job.address}
