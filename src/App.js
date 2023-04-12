@@ -1,10 +1,10 @@
 import "./assets/scss/root.css";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Landing from "./pages/Landing";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Landing from "./pages/landing";
+import Register from "./pages/register";
+import Login from "./pages/login";
 import Jobs from "./pages/Jobs";
 function App() {
   return (
