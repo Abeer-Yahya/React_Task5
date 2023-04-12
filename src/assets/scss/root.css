@@ -360,4 +360,29 @@ body {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #131313;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #131313;
+  gap: 20px;
+  padding: 4rem;
+}
+.container .jobCard {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f1ee;
 }/*# sourceMappingURL=root.css.map */

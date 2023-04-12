@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../components/hero";
-import Numbers from "../components/numbers";
-import Career from "../components/career";
-import Contact from "../components/contact";
+import Hero from "../components/Hero";
+import Numbers from "../components/Numbers";
+import Career from "../components/Career";
+import Contact from "../components/Contact";
 
 export default function Landing() {
   return (

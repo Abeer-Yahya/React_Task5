@@ -20,6 +20,7 @@ export default function Header() {
           <option value="Quality Assurance">Quality Assurance</option>{" "}
           <option value="BI Analyst">BI Analyst</option>
         </select>
+        <NavLink to={"/jobs"}>Job Opportunities</NavLink>
       </div>
       <div>
         <a href="#CTA" className="primaryButton">
@@ -27,7 +28,7 @@ export default function Header() {
         </a>
         <a>
           {cookies.currentUser == null && (
-            <NavLink to={"/login"} className=" nav-link">
+            <NavLink to={"/login"}>
               Login
               <img
                 style={{ marginLeft: "0.3rem" }}
