@@ -11,7 +11,9 @@ export default function Header() {
   return (
     <nav>
       <div className="flex">
-        <p>TechLead</p>
+        <NavLink to={"/"} className="navLink">
+          <strong>TechLead</strong>
+        </NavLink>
         <select className="headerMenu">
           <option value="All Programs">All Programs</option>
           <option value="Data Analytics">Data Analytics</option>
@@ -20,7 +22,13 @@ export default function Header() {
           <option value="Quality Assurance">Quality Assurance</option>{" "}
           <option value="BI Analyst">BI Analyst</option>
         </select>
-        <NavLink to={"/jobs"}>Job Opportunities</NavLink>
+        <NavLink
+          to={"/jobs"}
+          className="navLink"
+          state={{ marginTop: "0.4rem" }}
+        >
+          Jobs
+        </NavLink>
       </div>
       <div>
         <a href="#CTA" className="primaryButton">

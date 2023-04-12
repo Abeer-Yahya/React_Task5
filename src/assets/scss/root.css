@@ -1,23 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap");
 nav {
   background-color: #ff8f5f;
-  padding: 0.5rem 4rem;
+  padding: 0.8rem 4rem;
   display: flex;
   justify-content: space-between;
 }
 nav .flex {
   display: flex;
 }
-nav .flex p {
-  font-size: 1.4rem;
-  font-weight: 700;
+nav .flex .navLink {
+  margin-top: 0.45rem;
   margin-right: 1.4rem;
+  display: inline-block;
 }
 nav .flex .headerMenu {
   margin-top: -0.05rem;
   font-size: 1rem;
   background-color: transparent;
   border: none;
+  margin-right: 1rem;
 }
 nav .flex .headerMenu:focus {
   border: none;
