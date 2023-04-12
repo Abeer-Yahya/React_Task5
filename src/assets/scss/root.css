@@ -376,6 +376,14 @@ body {
   border-radius: 10px;
   padding: 2rem 1rem;
 }
+.container .jobCard a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #ff8f5f;
+  color: #131313;
+}
 
 * {
   margin: 0;
